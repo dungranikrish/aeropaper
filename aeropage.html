@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            font-family: REM,sans-serif;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="w-full flex justify-center fixed top-0 inset-x-0 z-[1]">
+        <div class="container py-3 font-semibold  bg-white">
+            <div class="flex justify-between ">
+                <div class="w-full flex items-center justify-between lg:w-auto">
+                    <img src="https://themes.coderthemes.com/aeropage/assets/logo-dark-CbL8c2A5.png" alt=""
+                        width="150px">
+                </div>
+                <div class="w-60% py-3">
+                    <ul class="flex gap-7 cursor-pointer font-medium">
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Home</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Features</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Faq</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Portfolio</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Pricing</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Service</li>
+                        <li class="transition-all duration-300 hover:text-[#EA580C]">Blog</li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-base font-semibold transition-all duration-300 hover:text-[#EA580C]" href="#" role="button" id="dropdownMenuLink"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Landing
+                            </a>
+                  
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Agency</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Agency Two</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Charity</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Company</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Creative</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Ebook</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Finance</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Hosting</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Marketing</a></li>
+                              <li><a class="dropdown-item hover:text-[#EA580C] transition-all duration-300 font-[550] text-[15px] py-2.5" href="#">Marketing 2</a></li>
+
+                            </ul>
+                          </div>
+                    </ul>
+                </div>
+                <div class="w-20% py-2">
+                    <a href="#"><div class="pr-8 pl-8 py-1.5 bg-[#EA580C] rounded-full text-white hover:bg-[#c2410c] transition-all">
+                        Download</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOzAQMAAABK5rRXAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAATeSURBVHja7NuxDYRAEATBC+Hzj/UlIAW8EV3ntDuFcPc873dOKBsrcHFxcXFxG9lYgYuL+y5X6f3Pxkf3M+Pi4uLiVrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLixvlXqXnjujr2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uOyJ3RI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXF9cdkTuiRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uL647IHVEjGytwcXFxcXEb2ViBi4uLi4t7s2/HNAAAAAjD/LvGBsl68a4CaMxHBS4uLi4ubmM+KnBxcXFxcRvzUYGLi4uLi9uYjwpcXFxcXNzGfFTg4uLi+hH5ETXmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxcVtzEcFLi4uLi5uYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXFw/Ij+ixnxU4OLi4uLiNuajAhcXFxcXtzEfFbi4uLi4uI35qMDFxcXFxW3MRwUuLi4uLm5jPipwcXFxcXEb81GBi4uL60fkR9SYjwpcXFxcXNzGfFTg4uLi4uI25qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLi4ubmM+KnBxcXH9iPyIGvNRgYuLi4uL25iPClxcXFxc3MZ8VODi4uLi4jbmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxR37dkwDAACAMMy/a2yQrBfvKgDcxnxU4OLi4voR+RE15qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLi4ubmM+KnBxcXFxcRvzUYGLi4uLi9uYjwpcXFxcPyI/osZ8VODi4uLi4jbmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxcVtzEcFLi4uLi5uYz4qcHFxcXFxG/NRgYuLi+tH5EfUmI8KXFxcXFzcxnxU4OLi4uLiNuajAhcXFxcXtzEfFbi4uLi4uI35qMDFxcXFxW3MRwUuLi4uLm5jPipwcXFx/Yj8iBrzUYGLi4uLi9uYjwpcXFxcXNzGfFTg4uLi4uI25qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLq4fkR9RYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXNy1b8c0AAAwDMP4sx6IPZXiK28NoLi4jWyswMXFxcXFbWRjBS4uLi4ubiMbK3BxcXFxcRvZWIGLi4vrR+RH1MjGClxcXFxc3EY2VuDi4uLi4jaysQIXFxcXF7eRjRW4uLi4uLiNbKzAxcXFxcVtZGMFLi4uLi5uIxsrcHFxcf2I/Iga2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uH5EfUSMbK3BxcXFxcRvZWIGLi4uLi9vIxgpcXFxcXNxGNlbg4uLi4uI2srECF/ebA3EEd5kr8tCIAAAAAElFTkSuQmCC&quot"
+            alt="">
+    </div> -->
+    <div class="container relative mt-[100px]">
+        <div class="grid lg:grid-cols-2 gap-6 flex justify-evenly">
+            <div class="max-w-lg lg:text-start py-5">
+                <h2 class="lg:text-6xl/tight sm:text-5xl text-4xl font-semibold text-default-950">Better design for your digital products.</h2>
+                <p class="text-base font-semibold my-6">
+                    We are a creative studio specializing in UI/UX design,
+development and strategy.
+                </p>
+                <button class="bg-[#ea580c1a] px-6 py-2 rounded-md font-semibold border-1 border-[#EA580C] text-[#EA580C]" type="submit">Get Solution</button>
+
+            </div>
+            <div>
+                <img src="https://themes.coderthemes.com/aeropage/assets/hero-u1BrDpJJ.png" alt="" class="h-full w-full">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex justify-center">
+            <button class="bg-[#ea580c33] px-3 py-1 rounded-md font-semibold uppercase tracking-wider text-xs border-1 border-[#EA580C] text-[#EA580C]" type="submit">Features Services</button>
+        </div>
+        <h2 class="text-4xl font-bold capitalize text-default-950 my-4 flex justify-center">Features</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
